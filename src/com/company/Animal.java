@@ -2,7 +2,7 @@ package com.company;
 import java.io.File;
 
 
-public class Animal {
+public class Animal  implements Soldable, Edible {
     final String species;
     private Double weight;
     public String name;
@@ -35,7 +35,7 @@ public class Animal {
 
     void feed() {
         if (weight == 0) {
-            System.out.println("Your Animal, " + name + " is dead");
+            System.out.println("Your Animal, " + name + " is already dead");
         } else {
             ++weight;
             System.out.println(name + " has been fed");
@@ -50,7 +50,7 @@ public class Animal {
             System.out.println(name + " your animal seems to be happy");
         } else if (weight > 1.0) {
             --weight;
-            System.out.println(name + " your animal seems to be exhased");
+            System.out.println(name + " your animal seems to be exhousted");
         } else {
             weight = 0.0;
             System.out.println(name + " died, remember to feed your animals");
@@ -61,5 +61,19 @@ public class Animal {
         return weight;
     }
 
+
+    @Override
+    public  void sell() throws Exception {
+
+        System.out.println("Animal was sold");
+
+
+    }
+
+    @Override
+    public void eat() throws Exception {
+        System.out.println("Animal was eaten");
+
+    }
 
 }

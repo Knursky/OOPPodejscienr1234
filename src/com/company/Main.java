@@ -2,10 +2,12 @@ package com.company;
 
 import com.company.devices.Car;
 import com.company.devices.Phone;
+import com.company.devices.Device;
+
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args)throws    Exception {
 	// write your code here
 
         Animal dog = new Animal("dog");
@@ -32,6 +34,10 @@ public class Main {
         System.out.println(me instanceof Human);
         System.out.println(me instanceof Object);
 
+me.feed();
+me.pet .feed();
 
+zFlip.turnOn();
+forDzik.turnOn();
     }
 }

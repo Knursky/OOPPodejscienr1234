@@ -22,4 +22,15 @@ public class Human extends Animal{
     public Double getSalary(){
         return salary;
     }
+    public void sell() throws Exception{
+
+        throw new Exception("Selling Human for candies");
+
+
+    }
+
+    public void eat() throws Exception{
+        throw new Exception("Eating human like candies");
+
+    }
 }
