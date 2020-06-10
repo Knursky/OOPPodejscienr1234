@@ -38,7 +38,7 @@ public class Animal {
             System.out.println("Your Animal, " + name + " is dead");
         } else {
             ++weight;
-            System.out.println(name + "has been fed");
+            System.out.println(name + " has been fed");
         }
     }
 
