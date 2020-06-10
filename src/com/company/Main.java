@@ -1,5 +1,7 @@
 package com.company;
 
+import javafx.scene.input.ScrollEvent;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -20,5 +22,9 @@ public class Main {
         me.pet.takeForAWalk();
         me.pet.feed();
 
+
+        Car forDzik = new Car("Ford", "Focus", Boolean.FALSE, 4);
+        me.car = forDzik;
+        System.out.println(me.car.producer + " " + me.car.model + " " +"HOT?" + " " + me.car.HOT);
     }
 }

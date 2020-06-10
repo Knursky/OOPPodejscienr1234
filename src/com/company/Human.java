@@ -4,6 +4,7 @@ public class Human {
     public String lastName;
     public Animal pet;
     public Phone mobile;
+    public Car car;
 
     protected String phoneNumber;
     private Double salary;
