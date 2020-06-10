@@ -18,4 +18,9 @@ public class Car extends Device {
         System.out.println("Car engine started");
 
     }
+
+      public String toString() {
+        return this.producer + " " + this.model + " " + " nr of doors" + this.nrOfDoors;
+    }
 }
+

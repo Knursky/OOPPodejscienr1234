@@ -17,7 +17,7 @@ public class Main {
 
         Human me = new Human();
         me.firstName = "Adrian";
-        me.lastName = "Andrzejewski";
+        me.lastName = "And";
         me.pet = dog;
         me.mobile = zFlip;
         me.pet.feed();
@@ -39,5 +39,14 @@ me.pet .feed();
 
 zFlip.turnOn();
 forDzik.turnOn();
+
+ Human knurzyca = new Human();
+ knurzyca.firstName = "Katarzyna";
+ knurzyca.lastName = "Pogo";
+ knurzyca.car = forDzik;
+
+ System.out.println(me.car);
+ System.out.println(me);
     }
+
 }

@@ -13,7 +13,7 @@ public class Phone extends Device{
     }
     @Override
     public void turnOn(){
-        System.out.println("Turned on");
+        System.out.println("Galaxy Turned on");
     }
 }
 
