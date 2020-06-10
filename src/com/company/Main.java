@@ -1,6 +1,7 @@
 package com.company;
 
-import javafx.scene.input.ScrollEvent;
+import com.company.devices.Car;
+import com.company.devices.Phone;
 
 public class Main {
 
@@ -26,5 +27,11 @@ public class Main {
         Car forDzik = new Car("Ford", "Focus", Boolean.FALSE, 4);
         me.car = forDzik;
         System.out.println(me.car.producer + " " + me.car.model + " " +"HOT?" + " " + me.car.HOT);
+        System.out.println("blablablabla");
+        System.out.println(me instanceof Animal);
+        System.out.println(me instanceof Human);
+        System.out.println(me instanceof Object);
+
+
     }
 }

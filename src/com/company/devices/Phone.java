@@ -1,4 +1,7 @@
-package com.company;
+package com.company.devices;
+
+
+
 
 public class Phone {
     final String producer;
