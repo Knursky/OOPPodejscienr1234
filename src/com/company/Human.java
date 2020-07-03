@@ -12,7 +12,7 @@ public class Human extends Animal {
 
 
     protected String phoneNumber;
-    private Double salary;
+    private Double salary;//task 3,4
 
     public Human(){
         super("Homo Sapiens");
