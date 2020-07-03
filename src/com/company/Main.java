@@ -39,7 +39,7 @@ me.pet .feed();
 
 zFlip.turnOn();
 forDzik.turnOn();
-
+//task 6
  Human knurzyca = new Human();
  knurzyca.firstName = "Katarzyna";
  knurzyca.lastName = "Pogo";

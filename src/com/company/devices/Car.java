@@ -22,5 +22,6 @@ public class Car extends Device {
       public String toString() {
         return this.producer + " " + this.model + " " + " nr of doors" + this.nrOfDoors;
     }
+
 }
 
