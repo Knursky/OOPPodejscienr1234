@@ -10,7 +10,7 @@ public abstract class Device implements Soldable {
                 this.model = model;
 
     }
-
+//task7
     public abstract void turnOn();
     public String getModel(){
         return this.model;
