@@ -2,11 +2,11 @@ package com.company;
 import java.io.File;
 
 
-public class Animal  implements Soldable, Edible {
+public class Animal  implements  Edible {
     final String species;
     private Double weight;
     public String name;
-    File pic;
+
 
     private static Double NEW_DOG_WEIGHT = 1.0;
     private static Double NEW_LION_WEIGHT = 10.0;
@@ -62,13 +62,6 @@ public class Animal  implements Soldable, Edible {
     }
 
 
-    @Override
-    public  void sell() throws Exception {
-
-        System.out.println("Animal was sold");
-
-
-    }
 
     @Override
     public void eat() throws Exception {

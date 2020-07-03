@@ -13,7 +13,7 @@ public class Human extends Animal {
 
     protected String phoneNumber;
     private Double salary;//task 3,4
-
+    public Double cash = 666.0;//task8
     public Human(){
         super("Homo Sapiens");
 

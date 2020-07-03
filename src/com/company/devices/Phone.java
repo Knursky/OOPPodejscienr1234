@@ -1,4 +1,6 @@
 package com.company.devices;
+import com.company.Human;
+
 
 
 
@@ -15,5 +17,12 @@ public class Phone extends Device{
     public void turnOn(){
         System.out.println("Galaxy Turned on");
     }
+
+
+public void sell(){
+    System.out.println("sold");
+
+}
+
 }
 

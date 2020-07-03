@@ -44,9 +44,22 @@ forDzik.turnOn();
  knurzyca.firstName = "Katarzyna";
  knurzyca.lastName = "Pogo";
  knurzyca.car = forDzik;
-
  System.out.println(me.car);
  System.out.println(me);
+
+
+ Human brother = new Human();
+
+ brother.firstName = "Patryk";
+ brother.lastName = "P";
+
+ me.car.sell(brother, me, 222.0);
+
+ System.out.println("Current Cash is " + me.cash    + "$");
+ System.out.println("Brother now has" + brother.cash + "$");
+ System.out.println("Car = " + me.car);
+ System.out.println("Brother car is now " + brother.car);
+
     }
 
 }

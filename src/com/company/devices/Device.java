@@ -1,7 +1,8 @@
 package com.company.devices;
 import com.company.Soldable;
-public abstract class Device implements Soldable {
-//task 7
+import com.company.Human;
+
+public abstract class Device {
     final public String producer;
     final public String model;
 
@@ -10,14 +11,10 @@ public abstract class Device implements Soldable {
                 this.model = model;
 
     }
-//task7
+
     public abstract void turnOn();
     public String getModel(){
         return this.model;
-
-    }
-    public void sell(){
-        System.out.println("sold");
 
     }
 }
