@@ -1,8 +1,7 @@
-package com.company;
-import java.io.File;
+package com.company.animals;
 
 
-public class Animal  implements  Edible {
+public class Animal   {
     final String species;
     private Double weight;
     public String name;
@@ -33,7 +32,7 @@ public class Animal  implements  Edible {
     }
 
 
-    void feed() {
+   public void feed() {
         if (weight == 0) {
             System.out.println("Your Animal, " + name + " is already dead");
         } else {
@@ -42,7 +41,7 @@ public class Animal  implements  Edible {
         }
     }
 
-    void takeForAWalk() {
+    public void takeForAWalk() {
         if(weight == 0.0){
             System.out.println("your animal is already dead");
         } else if (weight > 3.0) {
@@ -63,9 +62,8 @@ public class Animal  implements  Edible {
 
 
 
-    @Override
-    public void eat() throws Exception {
-        System.out.println("Animal was eaten");
+    protected void kill() throws Exception {
+        System.out.println("Animal is dead");
 
     }
 

@@ -1,4 +1,5 @@
-package com.company;
+package com.company.animals;
+
 import com.company.devices.Car;
 import com.company.devices.Phone;
 

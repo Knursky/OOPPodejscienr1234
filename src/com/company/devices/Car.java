@@ -1,5 +1,5 @@
 package com.company.devices;
-import com.company.Human;
+import com.company.animals.Human;
 import com.company.Soldable;
 
 public class Car extends Device implements Soldable {

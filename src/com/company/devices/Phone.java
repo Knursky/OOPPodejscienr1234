@@ -1,8 +1,4 @@
 package com.company.devices;
-import com.company.Human;
-
-
-
 
 
 public class Phone extends Device{
