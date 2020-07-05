@@ -1,7 +1,7 @@
 package com.company.animals;
 
 
-public class Animal   {
+public class Animal implements Feedable{
     final String species;
     private Double weight;
     public String name;
@@ -11,32 +11,42 @@ public class Animal   {
     private static Double NEW_LION_WEIGHT = 10.0;
     private static Double NEW_OTHER_ANIMAL_WEIGHT = 3.0;
 
+    private static Double DEFAULT_FEED_WEIGHT = 1.0;
     public Animal(String species) {
         System.out.println("New Animal has been born");
         this.species = species;
-
         switch (species) {
-            case "Dog": {
+            case "dog":{
                 weight = NEW_DOG_WEIGHT;
                 break;
             }
-            case "Lion": {
+            case "lion": {
                 weight = NEW_LION_WEIGHT;
                 break;
+
             }
             default: {
                 weight = NEW_OTHER_ANIMAL_WEIGHT;
                 break;
             }
         }
-    }
+            }
+
+            public Animal(String species, Double weight){
+        this.weight = weight;
+        this.species = species;
+            }
+        public void feed() {
+        feed(DEFAULT_FEED_WEIGHT);
+        }
 
 
-   public void feed() {
+
+   public void feed(Double foodWeight ) {
         if (weight == 0) {
             System.out.println("Your Animal, " + name + " is already dead");
         } else {
-            ++weight;
+            weight += foodWeight;
             System.out.println(name + " has been fed");
         }
     }
@@ -64,7 +74,12 @@ public class Animal   {
 
     protected void kill() throws Exception {
         System.out.println("Animal is dead");
+        this.weight = 0.0;
 
+    }
+    public String toString() {
+
+        return("Animal" + this.species + "name" + this.name);
     }
 
 }

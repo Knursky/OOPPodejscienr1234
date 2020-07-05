@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args)throws    Exception {
 	// write your code here
 
-        Animal dog = new Pet("dog");
+        Pet dog = new Pet("dog");
         dog.name = "Pug";
 
         Phone zFlip = new Phone("Samsung", "zFlip", 6.2);

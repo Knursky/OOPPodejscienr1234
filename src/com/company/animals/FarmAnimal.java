@@ -1,6 +1,6 @@
 package com.company.animals;
 
-public class FarmAnimal extends Animal implements Edible {
+public class FarmAnimal extends Animal implements Edible{
 
     public FarmAnimal(String species) {
         super(species);
@@ -13,4 +13,5 @@ public void eat() throws Exception {
     System.out.println("animal has been eaten");
 
 }
+
 }
