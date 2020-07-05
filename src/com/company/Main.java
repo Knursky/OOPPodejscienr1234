@@ -1,12 +1,10 @@
 package com.company;
 
-import com.company.animals.Animal;
 import com.company.animals.FarmAnimal;
 import com.company.animals.Human;
 import com.company.animals.Pet;
-import com.company.devices.Car;
-import com.company.devices.Phone;
-
+import com.company.devices.*;
+import javafx.scene.input.ScrollEvent;
 
 public class Main {
 
@@ -23,27 +21,21 @@ public class Main {
         me.lastName = "And";
         me.pet = dog;
         me.mobile = zFlip;
-        me.pet.feed();
-        me.pet.takeForAWalk();
-        me.pet.takeForAWalk();
-        me.pet.feed();
 
 
-        Car forDzik = new Car("Ford", "Focus", Boolean.FALSE, 4);
+        Car forDzik = new ElectricCar("Ford", "Focus", Boolean.FALSE, 4);
         me.car = forDzik;
         System.out.println(me.car.producer + " " + me.car.model + " " +"HOT?" + " " + me.car.HOT);
         System.out.println("blablablabla");
 
-me.feed();
-me.pet .feed();
 
 zFlip.turnOn();
 forDzik.turnOn();
-//task 6
+
  Human knurzyca = new Human();
  knurzyca.firstName = "Katarzyna";
  knurzyca.lastName = "Pogo";
- knurzyca.car = forDzik;
+ knurzyca.car = new DieselCar("Mercedes", "S class", Boolean.TRUE, 4);
  System.out.println(me.car);
  System.out.println(me);
 
@@ -60,8 +52,15 @@ forDzik.turnOn();
  System.out.println("Car = " + me.car);
  System.out.println("Brother car is now " + brother.car);
 
+
+ zFlip.installAnApp("Youtube");
+ zFlip.installAnApp("Youtube", 1.2);
+ ;
         FarmAnimal pig = new FarmAnimal("Pig");
         pig.eat();
+
+        System.out.println(brother.car);
+        System.out.println(knurzyca.car);
     }
 
 }
