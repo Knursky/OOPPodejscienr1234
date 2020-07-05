@@ -4,7 +4,9 @@ import com.company.animals.FarmAnimal;
 import com.company.animals.Human;
 import com.company.animals.Pet;
 import com.company.devices.*;
-import javafx.scene.input.ScrollEvent;
+
+
+
 
 public class Main {
 
@@ -24,9 +26,9 @@ public class Main {
 
 
         Car forDzik = new ElectricCar("Ford", "Focus", Boolean.FALSE, 4);
-        me.car = forDzik;
-        System.out.println(me.car.producer + " " + me.car.model + " " +"HOT?" + " " + me.car.HOT);
-        System.out.println("blablablabla");
+        me.setCar(forDzik,0);
+        System.out.println(me.getCar(0).producer + " " + me.getCar(0).model + " " +"HOT?" + " " + me.getCar(0).HOT);
+
 
 
 zFlip.turnOn();
@@ -35,8 +37,8 @@ forDzik.turnOn();
  Human knurzyca = new Human();
  knurzyca.firstName = "Katarzyna";
  knurzyca.lastName = "Pogo";
- knurzyca.car = new DieselCar("Mercedes", "S class", Boolean.TRUE, 4);
- System.out.println(me.car);
+ knurzyca.setCar(new DieselCar("Mercedes", "S class", Boolean.TRUE, 4),0);
+ System.out.println(me.getCar(0));
  System.out.println(me);
 
 
@@ -45,12 +47,12 @@ forDzik.turnOn();
  brother.firstName = "Patryk";
  brother.lastName = "P";
 
- me.car.sell(brother, me, 222.0);
+ me.getCar(0).sell(brother, me, 222.0);
 
  System.out.println("Current Cash is " + me.cash    + "$");
  System.out.println("Brother now has" + brother.cash + "$");
- System.out.println("Car = " + me.car);
- System.out.println("Brother car is now " + brother.car);
+ System.out.println("Car = " + me.getCar(0));
+ System.out.println("Brother car is now " + brother.getCar(0));
 
 
  zFlip.installAnApp("Youtube");
@@ -59,8 +61,8 @@ forDzik.turnOn();
         FarmAnimal pig = new FarmAnimal("Pig");
         pig.eat();
 
-        System.out.println(brother.car);
-        System.out.println(knurzyca.car);
+        System.out.println(brother.getCar(0));
+        System.out.println(knurzyca.getCar(0));
     }
 
 }
